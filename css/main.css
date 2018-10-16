@@ -1,0 +1,43 @@
+#bear {
+   background-color: pink;
+}
+
+#left-eye, #right-eye {
+  animation: back-and-forth 3s linear infinite;
+}
+
+@keyframes back-and-forth {
+
+  0% {
+    transform: translate(0, 0);
+  }
+
+  33% {
+    transform: translate(10px, 0);
+  }
+
+  66% {
+    transform: translate(-10px, 0);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+
+}
+
+#left-ear {
+  transition: .5s;
+}
+
+#right-ear {
+  transition: .5s;
+}
+
+#bear:hover #left-ear{
+  transform: translate(0, -20px);
+}
+
+#bear:hover #right-ear{
+  transform: translate(0, -20px);
+}
